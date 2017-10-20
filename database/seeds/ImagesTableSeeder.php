@@ -25,7 +25,7 @@ class ImagesTableSeeder extends Seeder
         {
         	Image::create([
         		'title' => $faker->text(80),
-        		'description' => $content = $faker->paragraph(18),
+        		'description' => $content = $faker->paragraph(5),
         		'thumbnail' => $imageLink,
         		'imageLink' => $imageLink,
         		'user_id' => $faker->numberBetween($min = 1, $max = 5),
